@@ -98,21 +98,6 @@ nav ul li a:hover {
   transform: translate(-40%, -50%);
 }
 
-.icon a {
-  text-decoration: none;
-  font-size: 30px;
-  display: inline-block;
-  margin-left: 10%;
-  color: antiquewhite;
-  font-weight: bold;
-  margin-top: 120px;
-  transition: transform 0.5s;
-}
-
-.icon a:hover {
-  color: red;
-  transform: translate(-5px);
-}
 
 /*................ About .......................*/
 
@@ -322,4 +307,150 @@ form .btn2 {
   font-weight: 300;
   background-color: #121212;
   margin-top: 20px;
+}
+
+/* small screens */
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-section {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .header-text {
+    margin-top: 1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-text h1 span {
+    font-size: 2rem;
+  }
+
+  .header-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .header-text img {
+    display: none;
+  }
+
+  /*About */
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    margin-bottom: 2rem;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  .education {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .education h3 {
+    font-size: 1rem;
+  }
+
+  /* Skills */
+  #skills {
+    padding: 1rem 0;
+  }
+
+  .skill-list {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-list div {
+    margin-bottom: 2rem;
+  }
+
+  /* PROJECTS */
+
+  #project {
+    padding: 1rem 0;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .work {
+    margin-bottom: 2rem;
+  }
+
+  .work img {
+    width: 100%;
+
+  }
+
+  /* contact */
+
+  #contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left {
+    margin-bottom: 2rem;
+  }
+
+  .contact-left p {
+    margin-bottom: 0.5rem;
+  }
+
+  .icons {
+    margin-top: 1rem;
+  }
+
+  .icons a {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .btn.btn2 {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
 }
